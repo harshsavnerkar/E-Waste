@@ -719,15 +719,15 @@ function initTheme() {
     document.documentElement.setAttribute('data-theme', savedTheme);
     updateThemeIcon(savedTheme);
   } else {
-    // Default dark theme
-    document.documentElement.setAttribute('data-theme', 'dark');
-    updateThemeIcon('dark');
+    // Default light theme
+    document.documentElement.setAttribute('data-theme', 'light');
+    updateThemeIcon('light');
   }
 }
 
 function toggleTheme() {
-  const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
   document.documentElement.setAttribute('data-theme', newTheme);
   localStorage.setItem('ewem-theme', newTheme);
   updateThemeIcon(newTheme);

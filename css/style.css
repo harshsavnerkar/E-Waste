@@ -4,69 +4,69 @@
    ========================================================================== */
 
 :root {
-  /* Color Palette - Unique Deep Obsidian, Cosmic Navy & Aurora Glow */
-  --bg-primary: #070b14;
-  --bg-secondary: #0d1527;
-  --bg-card: rgba(15, 23, 42, 0.78);
-  --bg-card-hover: rgba(23, 37, 68, 0.90);
-  --bg-glass: rgba(10, 16, 32, 0.82);
-  --bg-glass-elevated: rgba(18, 28, 54, 0.92);
+  /* Color Palette - Vibrant Modern Light Porcelain Theme (Default) */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.88);
+  --bg-glass-elevated: rgba(255, 255, 255, 0.98);
   
-  --border-subtle: rgba(255, 255, 255, 0.09);
-  --border-medium: rgba(255, 255, 255, 0.16);
-  --border-highlight: rgba(20, 184, 166, 0.45);
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-medium: rgba(15, 23, 42, 0.14);
+  --border-highlight: rgba(37, 99, 235, 0.35);
 
-  --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
+  --text-main: #0f172a;
+  --text-muted: #475569;
   --text-dim: #64748b;
-  --text-white: #ffffff;
+  --text-white: #0f172a; /* Main text high contrast in light mode */
 
-  /* Brand Accents - Vibrant Modern Tech Spectrum */
-  --emerald-500: #10b981;
-  --emerald-400: #34d399;
-  --emerald-600: #059669;
-  --emerald-glow: rgba(16, 185, 129, 0.28);
+  /* Brand Accents - Rich, High-Contrast Light Spectrum */
+  --emerald-500: #059669;
+  --emerald-400: #10b981;
+  --emerald-600: #047857;
+  --emerald-glow: rgba(5, 150, 105, 0.20);
 
-  --cyan-400: #22d3ee;
-  --cyan-500: #06b6d4;
-  --cyan-glow: rgba(6, 182, 212, 0.28);
+  --cyan-400: #0284c7;
+  --cyan-500: #0369a1;
+  --cyan-glow: rgba(2, 132, 199, 0.20);
 
-  --amber-400: #fbbf24;
-  --amber-500: #f59e0b;
-  --amber-glow: rgba(245, 158, 11, 0.25);
+  --amber-400: #d97706;
+  --amber-500: #b45309;
+  --amber-glow: rgba(217, 119, 6, 0.20);
 
-  --indigo-400: #818cf8;
-  --indigo-500: #6366f1;
+  --indigo-400: #6366f1;
+  --indigo-500: #4f46e5;
 
-  --violet-400: #a78bfa;
-  --violet-500: #8b5cf6;
-  --violet-glow: rgba(139, 92, 246, 0.28);
+  --violet-400: #8b5cf6;
+  --violet-500: #7c3aed;
+  --violet-glow: rgba(124, 58, 237, 0.20);
 
   --rose-400: #f43f5e;
   --rose-500: #e11d48;
 
   /* Format specific colors */
-  --fmt-pdf: #ef4444;
-  --fmt-pdf-bg: rgba(239, 68, 68, 0.14);
-  --fmt-docx: #3b82f6;
-  --fmt-docx-bg: rgba(59, 130, 246, 0.14);
-  --fmt-pptx: #f97316;
-  --fmt-pptx-bg: rgba(249, 115, 22, 0.14);
-  --fmt-xlsx: #10b981;
-  --fmt-xlsx-bg: rgba(16, 185, 129, 0.14);
-  --fmt-media: #8b5cf6;
-  --fmt-media-bg: rgba(139, 92, 246, 0.14);
+  --fmt-pdf: #dc2626;
+  --fmt-pdf-bg: rgba(220, 38, 38, 0.10);
+  --fmt-docx: #2563eb;
+  --fmt-docx-bg: rgba(37, 99, 235, 0.10);
+  --fmt-pptx: #ea580c;
+  --fmt-pptx-bg: rgba(234, 88, 12, 0.10);
+  --fmt-xlsx: #059669;
+  --fmt-xlsx-bg: rgba(5, 150, 105, 0.10);
+  --fmt-media: #7c3aed;
+  --fmt-media-bg: rgba(124, 58, 237, 0.10);
 
-  /* Typography - Distinctive Modern Geometric & Editorial Pairing */
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* Typography - Outfit (Display & Headings) & DM Sans (Body) */
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
 
-  /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 12px 34px rgba(0, 0, 0, 0.55);
-  --shadow-glow: 0 0 28px var(--cyan-glow);
+  /* Shadows - Soft, Elevated Modern Cards */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.07);
+  --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.09);
+  --shadow-glow: 0 0 24px rgba(37, 99, 235, 0.14);
 
   /* Layout */
   --max-width: 1320px;
@@ -78,28 +78,39 @@
   --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Light Theme Variables */
-[data-theme="light"] {
-  --bg-primary: #f3f6fc;
-  --bg-secondary: #e8eef8;
-  --bg-card: rgba(255, 255, 255, 0.88);
-  --bg-card-hover: #ffffff;
-  --bg-glass: rgba(255, 255, 255, 0.85);
-  --bg-glass-elevated: rgba(255, 255, 255, 0.96);
+/* Explicit Dark Theme Variables (Available via Toggle) */
+[data-theme="dark"] {
+  --bg-primary: #070b14;
+  --bg-secondary: #0d1527;
+  --bg-card: rgba(15, 23, 42, 0.78);
+  --bg-card-hover: rgba(23, 37, 68, 0.90);
+  --bg-glass: rgba(10, 16, 32, 0.82);
+  --bg-glass-elevated: rgba(18, 28, 54, 0.92);
 
-  --border-subtle: rgba(15, 23, 42, 0.08);
-  --border-medium: rgba(15, 23, 42, 0.15);
+  --border-subtle: rgba(255, 255, 255, 0.09);
+  --border-medium: rgba(255, 255, 255, 0.16);
   --border-highlight: rgba(20, 184, 166, 0.45);
 
-  --text-main: #0c1427;
-  --text-muted: #475569;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
   --text-dim: #64748b;
-  --text-white: #0c1427;
+  --text-white: #ffffff;
 
-  --shadow-sm: 0 2px 5px rgba(15, 23, 42, 0.05);
-  --shadow-md: 0 5px 14px rgba(15, 23, 42, 0.08);
-  --shadow-lg: 0 14px 34px rgba(15, 23, 42, 0.12);
-  --shadow-glow: 0 0 22px rgba(20, 184, 166, 0.22);
+  --emerald-500: #10b981;
+  --emerald-400: #34d399;
+  --cyan-400: #22d3ee;
+  --cyan-500: #06b6d4;
+  --amber-400: #fbbf24;
+  --amber-500: #f59e0b;
+  --indigo-400: #818cf8;
+  --indigo-500: #6366f1;
+  --violet-400: #a78bfa;
+  --violet-500: #8b5cf6;
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 34px rgba(0, 0, 0, 0.55);
+  --shadow-glow: 0 0 28px rgba(6, 182, 212, 0.25);
 }
 
 /* CSS Reset & Base */
@@ -128,7 +139,7 @@ body {
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
-/* Ambient Background Effect - Dynamic Radiant Aurora */
+/* Ambient Background Effect - Soft Radiant Light Mesh */
 .bg-mesh {
   position: fixed;
   top: 0;
@@ -137,20 +148,21 @@ body {
   height: 100vh;
   pointer-events: none;
   z-index: -1;
+  opacity: 0.65;
+  background: 
+    radial-gradient(circle at 10% 12%, rgba(59, 130, 246, 0.09), transparent 45%),
+    radial-gradient(circle at 90% 15%, rgba(16, 185, 129, 0.09), transparent 45%),
+    radial-gradient(circle at 50% 68%, rgba(99, 102, 241, 0.07), transparent 50%),
+    radial-gradient(circle at 80% 85%, rgba(244, 114, 182, 0.05), transparent 40%);
+}
+
+[data-theme="dark"] .bg-mesh {
   opacity: 0.75;
   background: 
     radial-gradient(circle at 10% 15%, rgba(20, 184, 166, 0.18), transparent 45%),
     radial-gradient(circle at 88% 18%, rgba(139, 92, 246, 0.22), transparent 45%),
     radial-gradient(circle at 50% 70%, rgba(6, 182, 212, 0.16), transparent 50%),
     radial-gradient(circle at 80% 85%, rgba(99, 102, 241, 0.14), transparent 45%);
-}
-
-[data-theme="light"] .bg-mesh {
-  opacity: 0.55;
-  background: 
-    radial-gradient(circle at 10% 15%, rgba(20, 184, 166, 0.14), transparent 45%),
-    radial-gradient(circle at 90% 18%, rgba(139, 92, 246, 0.12), transparent 45%),
-    radial-gradient(circle at 50% 80%, rgba(6, 182, 212, 0.10), transparent 50%);
 }
 
 /* Global Typography for Titles & Headings */
@@ -225,21 +237,21 @@ h1, h2, h3, h4, h5, h6,
   font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  background: linear-gradient(120deg, var(--text-white), var(--text-muted));
+  background: linear-gradient(120deg, #0f172a, #334155);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-[data-theme="light"] .brand-title {
-  background: linear-gradient(120deg, #0f172a, #334155);
+[data-theme="dark"] .brand-title {
+  background: linear-gradient(120deg, #ffffff, #94a3b8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .brand-subtitle {
   font-size: 0.72rem;
-  color: var(--emerald-400);
-  font-weight: 600;
+  color: var(--emerald-500);
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -312,23 +324,23 @@ h1, h2, h3, h4, h5, h6,
   gap: 0.5rem;
   padding: 0.4rem 1rem;
   border-radius: var(--radius-full);
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.25);
-  color: var(--emerald-400);
+  background: rgba(5, 150, 105, 0.08);
+  border: 1px solid rgba(5, 150, 105, 0.22);
+  color: var(--emerald-500);
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
-  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.08);
+  box-shadow: 0 2px 10px rgba(5, 150, 105, 0.06);
 }
 
 .hero-badge .pulse-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--emerald-400);
-  box-shadow: 0 0 10px var(--emerald-400);
+  background-color: var(--emerald-500);
+  box-shadow: 0 0 10px var(--emerald-500);
   animation: pulse-glow 2s infinite;
 }
 
@@ -348,7 +360,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .hero-title .highlight-text {
-  background: linear-gradient(135deg, var(--emerald-400), var(--cyan-400));
+  background: linear-gradient(135deg, #2563eb, #0284c7, #059669);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -459,9 +471,9 @@ h1, h2, h3, h4, h5, h6,
   width: 2.85rem;
   height: 2.85rem;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(6, 182, 212, 0.15));
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  color: var(--emerald-400);
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.12), rgba(2, 132, 199, 0.12));
+  border: 1px solid rgba(5, 150, 105, 0.25);
+  color: var(--emerald-500);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -476,7 +488,7 @@ h1, h2, h3, h4, h5, h6,
 .info-tag {
   font-size: 0.72rem;
   font-weight: 700;
-  color: var(--emerald-400);
+  color: var(--emerald-500);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.15rem;
@@ -527,12 +539,12 @@ h1, h2, h3, h4, h5, h6,
 
 .detail-value.mono-val {
   font-family: var(--font-mono);
-  color: var(--cyan-400);
+  color: var(--cyan-500);
   letter-spacing: 0.03em;
 }
 
 .detail-value.highlight-val {
-  color: var(--emerald-400);
+  color: var(--emerald-500);
 }
 
 @media (max-width: 1024px) {
@@ -573,7 +585,7 @@ h1, h2, h3, h4, h5, h6,
 .section-tag {
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--emerald-400);
+  color: var(--emerald-500);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.25rem;
@@ -660,21 +672,21 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .cat-isa .cat-icon-box {
-  background: rgba(6, 182, 212, 0.12);
+  background: rgba(2, 132, 199, 0.12);
   color: var(--cyan-400);
-  border: 1px solid rgba(6, 182, 212, 0.2);
+  border: 1px solid rgba(2, 132, 199, 0.25);
 }
 
 .cat-ese .cat-icon-box {
-  background: rgba(16, 185, 129, 0.12);
-  color: var(--emerald-400);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: rgba(5, 150, 105, 0.12);
+  color: var(--emerald-500);
+  border: 1px solid rgba(5, 150, 105, 0.25);
 }
 
 .cat-extra .cat-icon-box {
-  background: rgba(245, 158, 11, 0.12);
+  background: rgba(217, 119, 6, 0.12);
   color: var(--amber-400);
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  border: 1px solid rgba(217, 119, 6, 0.25);
 }
 
 .cat-badge {
