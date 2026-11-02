@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=4ad3e432-da77-4289-a3fa-341656aad601
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EWEM Student Assignment & Academic Research Dashboard - In-Semester Assessments (ISA), End-Semester Evaluation (ESE) and Supplementary Case Studies.">
+  <meta name="theme-color" content="#070b14">
+  <title>EWEM Assignment Dashboard | E-Waste Management</title>
+  
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon / Visual Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+</head>
+<body>
+
+  <!-- Ambient Dynamic Mesh Background -->
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       Site Header / Navigation
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#top" class="brand-wrapper" title="EWEM Student Portal">
+        <div class="brand-logo-icon">
+          <!-- Eco-Circuit Emblem -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">EWEM Repository</span>
+          <span class="brand-subtitle">E-Waste Management</span>
+        </div>
+      </a>
+
+      <nav class="nav-actions" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#overview" class="nav-link">Overview</a></li>
+          <li><a href="#student-info" class="nav-link">Student Info</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#documents-repository" class="nav-link">Assignments</a></li>
+        </ul>
+
+        <button type="button" id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <!-- Icon injected by JS -->
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Hero Section
+       ========================================================================= -->
+  <main>
+    <section id="overview" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Academic Session 2026-2027 &bull; Student Submissions</span>
+          </div>
+
+          <h1 class="hero-title">
+            EWEM Academic <span class="highlight-text">Assignment &amp; Research</span> Portal
+          </h1>
+
+          <p class="hero-description">
+            Comprehensive repository for E-Waste Management coursework.
+            Explore continuous in-semester assessments, end-semester project dossiers, technical checklists, and peer-reviewed IEEE research.
+          </p>
+
+          <!-- Quick Metrics Bar -->
+          <div class="stats-strip">
+            <div class="stat-card">
+              <div class="stat-number">15</div>
+              <div class="stat-label">Verified Documents</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">5</div>
+              <div class="stat-label">ISA Submissions</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">8</div>
+              <div class="stat-label">ESE Deliverables</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Research Papers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Student Information Section
+         ========================================================================= -->
+    <section id="student-info" class="student-info-section">
+      <div class="container">
+        <div class="student-info-card">
+          <div class="student-info-header">
+            <div class="student-avatar-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="student-header-text">
+              <span class="info-tag">Academic Candidate Record</span>
+              <h2 class="student-card-title">Student Information</h2>
+            </div>
+          </div>
+
+          <div class="student-details-grid">
+            <div class="detail-item">
+              <span class="detail-label">Student Name</span>
+              <span class="detail-value">Harsh Savnerkar</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Roll Number</span>
+              <span class="detail-value mono-val">2410B0012</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Subject Name</span>
+              <span class="detail-value highlight-val">E-Waste Management</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Submitted To</span>
+              <span class="detail-value">Dr. Aniket Kundu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Category Highlight Cards Section
+         ========================================================================= -->
+    <section id="categories" class="categories-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">Academic Modules</span>
+            <h2 class="section-title">Submission Categories</h2>
+          </div>
+        </div>
+
+        <div class="categories-grid">
+          <!-- ISA Card -->
+          <div class="category-hero-card cat-isa" data-category-target="isa" role="button" tabindex="0" title="Filter by In-Semester Assessments">
+            <div class="cat-card-top">
+              <div class="cat-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                  <path d="M9 14l2 2 4-4"></path>
+                </svg>
+              </div>
+              <span class="cat-badge">Internal Evaluation</span>
+            </div>
+
+            <div class="cat-card-body">
+              <h3 class="cat-hero-name">ISA Submissions</h3>
+              <div class="cat-hero-sub">In-Semester Assessments</div>
+              <p class="cat-hero-desc">
+                Continuous internal evaluation records, state-wide Bihar Strategic Blueprint (18 MB), introductory coursework, toxicology notes, and class test papers.
+              </p>
+            </div>
+
+            <div class="cat-card-footer">
+              <span class="cat-count-info">
+                <strong>5 Documents</strong> &bull; 19.1 MB
+              </span>
+              <span class="cat-arrow-link">
+                <span>View ISA Files</span> &rarr;
+              </span>
+            </div>
+          </div>
+
+          <!-- ESE Card -->
+          <div class="category-hero-card cat-ese" data-category-target="ese" role="button" tabindex="0" title="Filter by End-Semester Evaluation">
+            <div class="cat-card-top">
+              <div class="cat-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <span class="cat-badge">Final Portfolio</span>
+            </div>
+
+            <div class="cat-card-body">
+              <h3 class="cat-hero-name">ESE Dossier</h3>
+              <div class="cat-hero-sub">End-Semester Evaluation</div>
+              <p class="cat-hero-desc">
+                Comprehensive end-semester deliverables including LEED green building weightage scoring sheet, design patent filings, statutory checklists, carbon metrics &amp; lab media.
+              </p>
+            </div>
+
+            <div class="cat-card-footer">
+              <span class="cat-count-info">
+                <strong>8 Documents</strong> &bull; 4.5 MB
+              </span>
+              <span class="cat-arrow-link">
+                <span>View ESE Files</span> &rarr;
+              </span>
+            </div>
+          </div>
+
+          <!-- Extras Card -->
+          <div class="category-hero-card cat-extra" data-category-target="extra" role="button" tabindex="0" title="Filter by Research & Extras">
+            <div class="cat-card-top">
+              <div class="cat-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <span class="cat-badge">Special Literature</span>
+            </div>
+
+            <div class="cat-card-body">
+              <h3 class="cat-hero-name">Research &amp; Extras</h3>
+              <div class="cat-hero-sub">Supplementary Studies</div>
+              <p class="cat-hero-desc">
+                External academic publications including peer-reviewed IEEE research paper on advanced circular recovery paradigms and technical engineering industry case studies.
+              </p>
+            </div>
+
+            <div class="cat-card-footer">
+              <span class="cat-count-info">
+                <strong>2 Documents</strong> &bull; 1.0 MB
+              </span>
+              <span class="cat-arrow-link">
+                <span>View Extras</span> &rarr;
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Filter, Search & Controls Sticky Bar
+         ========================================================================= -->
+    <section id="documents-repository" class="controls-section">
+      <div class="container controls-wrapper">
+        <!-- Search and View switcher row -->
+        <div class="search-and-views">
+          <div class="search-input-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="search-input" class="search-input" placeholder="Search assignments, topics, filenames (Press '/' to focus)..." aria-label="Search documents">
+            <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Clear Search">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="view-and-sort-group">
+            <select id="sort-select" class="sort-select" aria-label="Sort documents">
+              <option value="name-asc">Sort: Title (A &rarr; Z)</option>
+              <option value="name-desc">Sort: Title (Z &rarr; A)</option>
+              <option value="size-desc">Sort: File Size (Largest)</option>
+              <option value="size-asc">Sort: File Size (Smallest)</option>
+              <option value="type-asc">Sort: File Format</option>
+            </select>
+
+            <div class="view-mode-toggle" role="group" aria-label="View Mode">
+              <button type="button" id="view-grid-btn" class="view-btn active" title="Grid View" aria-label="Switch to Grid View">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+              </button>
+              <button type="button" id="view-table-btn" class="view-btn" title="Table View" aria-label="Switch to Table View">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="8" y1="6" x2="21" y2="6"></line>
+                  <line x1="8" y1="12" x2="21" y2="12"></line>
+                  <line x1="8" y1="18" x2="21" y2="18"></line>
+                  <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                  <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                  <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category & Format Pills Row -->
+        <div class="filter-tags-strip">
+          <div class="category-pills" role="tablist" aria-label="Category Filters">
+            <button type="button" class="pill-btn active" data-category="all">
+              <span>All Submissions</span>
+              <span id="count-all-badge" class="pill-badge">15</span>
+            </button>
+            <button type="button" class="pill-btn" data-category="isa">
+              <span>ISA Assessments</span>
+              <span id="count-isa-badge" class="pill-badge">5</span>
+            </button>
+            <button type="button" class="pill-btn" data-category="ese">
+              <span>ESE Deliverables</span>
+              <span id="count-ese-badge" class="pill-badge">8</span>
+            </button>
+            <button type="button" class="pill-btn" data-category="extra">
+              <span>Research &amp; Extras</span>
+              <span id="count-extra-badge" class="pill-badge">2</span>
+            </button>
+          </div>
+
+          <div class="type-filter-group" aria-label="Format Filters">
+            <span class="type-filter-label">Format:</span>
+            <button type="button" class="type-badge-btn active" data-type="all">All</button>
+            <button type="button" class="type-badge-btn" data-type="pdf">PDF</button>
+            <button type="button" class="type-badge-btn" data-type="docx">DOCX</button>
+            <button type="button" class="type-badge-btn" data-type="pptx">PPTX</button>
+            <button type="button" class="type-badge-btn" data-type="xlsx">XLSX</button>
+            <button type="button" class="type-badge-btn" data-type="media">Media</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Documents Listing (Grid / Table)
+         ========================================================================= -->
+    <section class="documents-section">
+      <div class="container">
+        <!-- Results status row -->
+        <div class="documents-status-bar">
+          <div id="results-count" class="results-count">Showing all 15 documents</div>
+          <button type="button" id="reset-filters-btn" class="reset-filters-btn">Reset Filters</button>
+        </div>
+
+        <!-- Grid Container -->
+        <div id="documents-grid" class="documents-grid" aria-live="polite">
+          <!-- Document Cards dynamically rendered by js/script.js -->
+        </div>
+
+        <!-- Table Container (hidden by default) -->
+        <div id="documents-table-container" class="table-view-container" style="display: none;">
+          <table class="documents-table">
+            <thead>
+              <tr>
+                <th style="width: 60px;">Format</th>
+                <th>Document Details</th>
+                <th>Category</th>
+                <th>File Size</th>
+                <th>Type</th>
+                <th style="text-align: right;">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="documents-table-body">
+              <!-- Rows dynamically rendered by js/script.js -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Empty State Container -->
+        <div id="empty-state" class="empty-state" style="display: none;">
+          <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <h3 class="empty-title">No matching documents found</h3>
+          <p class="empty-desc">We couldn't find any assignments matching your search query or active filter combination.</p>
+          <button type="button" class="btn btn-primary" onclick="document.getElementById('reset-filters-btn').click()">
+            Clear All Filters
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Document Inspection / Preview Modal
+       ========================================================================= -->
+  <div id="modal-overlay" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <header class="modal-header">
+        <div class="modal-header-left">
+          <div id="modal-type-badge" class="doc-type-icon fmt-pdf-icon">
+            PDF
+          </div>
+          <div class="modal-title-wrap">
+            <h2 id="modal-doc-title" class="modal-doc-title">Document Title</h2>
+            <div id="modal-doc-path" class="modal-doc-path">documents/...</div>
+          </div>
+        </div>
+
+        <div class="modal-header-right">
+          <a id="modal-newtab-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding:0.45rem 0.85rem; font-size:0.8rem;" title="Open directly in dedicated browser tab">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span>Open in Tab</span>
+          </a>
+
+          <a id="modal-download-btn" href="#" download class="btn btn-primary" style="padding:0.45rem 0.85rem; font-size:0.8rem;" title="Download file to local device">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download</span>
+          </a>
+
+          <button type="button" id="modal-close-btn" class="modal-close-btn" aria-label="Close Preview" title="Close (Esc)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div id="modal-body" class="modal-body">
+        <!-- Rendered dynamically depending on file type: PDF iframe, image, video, or Office dossier -->
+      </div>
+
+      <footer class="modal-footer">
+        <div>Official Course Document &bull; Verified Integrity</div>
+        <button type="button" id="modal-copypath-btn" class="btn btn-secondary" style="padding:0.35rem 0.75rem; font-size:0.75rem;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Copy File Path</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Toast Notification Alert
+       ========================================================================= -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <!-- =========================================================================
+       Site Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-title">E-Waste Management (EWEM)</div>
+          <div class="footer-subtitle">Academic Assignment &amp; Technical Portfolio Repository &bull; Term 2026-2027</div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#overview" class="footer-link">Back to Top</a>
+          <a href="#student-info" class="footer-link">Student Info</a>
+          <a href="#categories" class="footer-link">Categories</a>
+          <a href="#documents-repository" class="footer-link">All Files</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 EWEM Department. Preserving and archiving e-waste management scholarship.</div>
+        <div>All 15 authentic academic documents indexed &amp; verified.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
